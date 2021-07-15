@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Конвертор валют</h2>
+    <input type="number" id="rub-summ" placeholder="Введите сумму, руб" />
+    <label for="currency-rate"> Валюты: </label>
+    <select id="currency-rate" autofocus="true">
+      <option>Валюта для конвертации</option>
+      <option value="86" name="uk">Фунт стерлинга</option>
+      <option value="75" name="usa">Доллар США</option>
+      <option value="3" name="ua">Гривна</option>
+    </select>
+    <button id="convert-button">Конвертировать</button>
+    <div>
+      <span>Сумма в валюте:</span>
+      <span id="currency-summ">0</span>
+    </div>
+    <div>
+      <span>Ваш email:</span>
+      <input type="email" placeholder="Введите email" id="email"/>
+    </div>
+    <div>
+      <button id="make-subscribe">Записаться на обмен валюты</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
